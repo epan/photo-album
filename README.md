@@ -6,8 +6,6 @@ tiny full stack app (one hopes)
 ### How to use:
 You may want to assign the student the entire project, or just specific stages. Even if you want to only assign early stages, it may be useful to show them all stages in case they want to extend their project.
 
-[Download zip](Photo_Album_Project-2016-01-15.zip) for student
-
 ### Stage 0 MVP - Image Viewer
 1. Using mocked data
 2. Display titles of images in a table
