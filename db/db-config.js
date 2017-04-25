@@ -1,3 +1,5 @@
+const seedData = require('./seeds/seed');
+
 const db = require('knex')({
   client: 'mysql',
   connection: {
@@ -8,13 +10,25 @@ const db = require('knex')({
   }
 });
 
-db.schema.createTableIfNotExists('photos', (table) => {
-  table.increments();
-  table.string('title');
-  table.string('url');
-  table.integer('rating');
-}).then(() => {
-  console.log('table created');
-});
+db.schema.dropTableIfExists('photos')
+  .then(() => {
+    console.log('table dropped');  
+  })
+  .then(() => {
+    db.schema.createTableIfNotExists('photos', (table) => {
+      table.increments('id');
+      table.string('title');
+      table.string('url');
+      table.integer('rating');
+    })
+    .then(() => {
+      console.log('table created');
+      db('photos').insert(seedData)
+      .then(() => {
+        console.log('seed data inserted');
+      });
+    });
+  });
+  
 
 module.exports = db;
