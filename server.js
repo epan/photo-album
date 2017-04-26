@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 1337;
 
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
-app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/client/public'));
 
 app.listen(PORT, () => { 
   console.log(`Listening on ${IP}:${PORT}`); 
