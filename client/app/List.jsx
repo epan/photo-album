@@ -1,4 +1,5 @@
 import React from 'react';
+import ListItem from './ListItem';
 
 const List = ({images, handleTitleClick}) => {
   return (
@@ -7,15 +8,12 @@ const List = ({images, handleTitleClick}) => {
         <tbody>
         {images.map((image) => {
           return (
-            <tr
-              onClick={handleTitleClick}
+            <ListItem
               key={image.url}
-            >
-              <td>
-                {image.title}
-              </td>
-            </tr>
-            )
+              image={image}
+              handleTitleClick={handleTitleClick}
+            />
+          )
         })}
         </tbody>
       </table>
