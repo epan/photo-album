@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import List from './List';
+import PhotoViewer from './PhotoViewer';
 
 class App extends React.Component {
   constructor () {
@@ -17,7 +18,7 @@ class App extends React.Component {
         <h2>Photo Library App</h2>
         <h4>Using MySQL, Knex, React</h4>
         <List />
-        {/*<PhotoViewer />*/}
+        <PhotoViewer />
       </div>
     );
   }
