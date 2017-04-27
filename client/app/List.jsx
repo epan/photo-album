@@ -9,7 +9,7 @@ const List = ({images, handleTitleClick}) => {
         {images.map((image) => {
           return (
             <ListItem
-              key={image.url}
+              key={image.id}
               image={image}
               handleTitleClick={handleTitleClick}
             />

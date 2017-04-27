@@ -12,6 +12,8 @@ class App extends React.Component {
       images: [],
       currentImage: {}
     };
+
+    this.handleTitleClick = this.handleTitleClick.bind(this);
   }
 
   componentDidMount () {
@@ -21,8 +23,8 @@ class App extends React.Component {
     })
   }
 
-  handleTitleClick () {
-    console.log('hi');
+  handleTitleClick (id) {
+    console.log('id is:', id);
   }
 
   render () {
