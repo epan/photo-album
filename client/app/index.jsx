@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import List from './List';
+
 class App extends React.Component {
   constructor () {
     super ();
@@ -14,7 +16,7 @@ class App extends React.Component {
       <div>
         <h2>Photo Library App</h2>
         <h4>Using MySQL, Knex, React</h4>
-        {/*<List />*/}
+        <List />
         {/*<PhotoViewer />*/}
       </div>
     );
