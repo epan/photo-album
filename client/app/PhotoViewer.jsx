@@ -1,9 +1,12 @@
 import React from 'react';
+import PhotoData from './PhotoData';
+import PhotoFrame from './PhotoFrame';
 
 const PhotoViewer = () => {
   return (
     <div>
-      <img src="https://media3.giphy.com/media/D3QdO9mzKV8K4/giphy.gif" alt="doug"/>
+      <PhotoFrame />
+      <PhotoData />
     </div>
   );
 }

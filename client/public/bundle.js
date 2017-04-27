@@ -2271,7 +2271,31 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ 50);\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar PhotoViewer = function PhotoViewer() {\n  return _react2.default.createElement(\n    \"div\",\n    null,\n    _react2.default.createElement(\"img\", { src: \"https://media3.giphy.com/media/D3QdO9mzKV8K4/giphy.gif\", alt: \"doug\" })\n  );\n};\n\nexports.default = PhotoViewer;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTgzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2NsaWVudC9hcHAvUGhvdG9WaWV3ZXIuanN4Pzg1OGQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcblxuY29uc3QgUGhvdG9WaWV3ZXIgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxpbWcgc3JjPVwiaHR0cHM6Ly9tZWRpYTMuZ2lwaHkuY29tL21lZGlhL0QzUWRPOW16S1Y4SzQvZ2lwaHkuZ2lmXCIgYWx0PVwiZG91Z1wiLz5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgUGhvdG9WaWV3ZXI7XG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gY2xpZW50L2FwcC9QaG90b1ZpZXdlci5qc3giXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBO0FBQ0E7Ozs7O0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQURBO0FBSUE7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ 50);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _PhotoData = __webpack_require__(/*! ./PhotoData */ 184);\n\nvar _PhotoData2 = _interopRequireDefault(_PhotoData);\n\nvar _PhotoFrame = __webpack_require__(/*! ./PhotoFrame */ 185);\n\nvar _PhotoFrame2 = _interopRequireDefault(_PhotoFrame);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar PhotoViewer = function PhotoViewer() {\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(_PhotoFrame2.default, null),\n    _react2.default.createElement(_PhotoData2.default, null)\n  );\n};\n\nexports.default = PhotoViewer;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTgzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2NsaWVudC9hcHAvUGhvdG9WaWV3ZXIuanN4Pzg1OGQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBQaG90b0RhdGEgZnJvbSAnLi9QaG90b0RhdGEnO1xuaW1wb3J0IFBob3RvRnJhbWUgZnJvbSAnLi9QaG90b0ZyYW1lJztcblxuY29uc3QgUGhvdG9WaWV3ZXIgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxQaG90b0ZyYW1lIC8+XG4gICAgICA8UGhvdG9EYXRhIC8+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IFBob3RvVmlld2VyO1xuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGNsaWVudC9hcHAvUGhvdG9WaWV3ZXIuanN4Il0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTtBQUNBOzs7QUFBQTtBQUNBOzs7QUFBQTtBQUNBOzs7OztBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUZBO0FBS0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9");
+
+/***/ }),
+/* 184 */
+/* unknown exports provided */
+/* all exports used */
+/*!**********************************!*\
+  !*** ./client/app/PhotoData.jsx ***!
+  \**********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ 50);\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar PhotoData = function PhotoData() {\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(\n      'ul',\n      null,\n      _react2.default.createElement(\n        'li',\n        null,\n        'Title'\n      ),\n      _react2.default.createElement(\n        'li',\n        null,\n        'Rating'\n      )\n    )\n  );\n};\n\nexports.default = PhotoData;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTg0LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2NsaWVudC9hcHAvUGhvdG9EYXRhLmpzeD9jMjdjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5cbmNvbnN0IFBob3RvRGF0YSA9ICgpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPHVsPlxuICAgICAgICA8bGk+VGl0bGU8L2xpPlxuICAgICAgICA8bGk+UmF0aW5nPC9saT5cbiAgICAgIDwvdWw+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IFBob3RvRGF0YTtcblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBjbGllbnQvYXBwL1Bob3RvRGF0YS5qc3giXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBO0FBQ0E7Ozs7O0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUFBO0FBQUE7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUZBO0FBREE7QUFPQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=");
+
+/***/ }),
+/* 185 */
+/* unknown exports provided */
+/* all exports used */
+/*!***********************************!*\
+  !*** ./client/app/PhotoFrame.jsx ***!
+  \***********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ 50);\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar PhotoFrame = function PhotoFrame() {\n  return _react2.default.createElement(\n    \"div\",\n    { className: \"photo\" },\n    _react2.default.createElement(\"img\", { src: \"https://media3.giphy.com/media/D3QdO9mzKV8K4/giphy.gif\", alt: \"doug\" })\n  );\n};\n\nexports.default = PhotoFrame;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTg1LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2NsaWVudC9hcHAvUGhvdG9GcmFtZS5qc3g/NjFhMyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuXG5jb25zdCBQaG90b0ZyYW1lID0gKCkgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwicGhvdG9cIj5cbiAgICAgIDxpbWcgc3JjPVwiaHR0cHM6Ly9tZWRpYTMuZ2lwaHkuY29tL21lZGlhL0QzUWRPOW16S1Y4SzQvZ2lwaHkuZ2lmXCIgYWx0PVwiZG91Z1wiLz5cbiAgICA8L2Rpdj5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBQaG90b0ZyYW1lO1xuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGNsaWVudC9hcHAvUGhvdG9GcmFtZS5qc3giXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBO0FBQ0E7Ozs7O0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQURBO0FBSUE7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9");
 
 /***/ })
 /******/ ]);
