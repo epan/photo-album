@@ -1,8 +1,25 @@
 import React from 'react';
 
-const List = () => {
+const List = ({images, handleTitleClick}) => {
   return (
-    <p>Sup from the list</p>
+    <div>
+      <table>
+        <tbody>
+        {images.map((image) => {
+          return (
+            <tr
+              onClick={handleTitleClick}
+              key={image.url}
+            >
+              <td>
+                {image.title}
+              </td>
+            </tr>
+            )
+        })}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
