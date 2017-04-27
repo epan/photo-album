@@ -19,7 +19,7 @@ class App extends React.Component {
   componentDidMount () {
     this.setState({
       images: seedData,
-      currentImage: seedData[0]
+      currentImage: seedData[1]
     })
   }
 
@@ -36,7 +36,7 @@ class App extends React.Component {
           images={this.state.images}
           handleTitleClick={this.handleTitleClick}
         />
-        <PhotoViewer />
+        <PhotoViewer image={this.state.currentImage} />
       </div>
     );
   }

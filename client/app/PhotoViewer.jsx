@@ -2,11 +2,11 @@ import React from 'react';
 import PhotoData from './PhotoData';
 import PhotoFrame from './PhotoFrame';
 
-const PhotoViewer = () => {
+const PhotoViewer = ({image}) => {
   return (
     <div>
-      <PhotoFrame />
-      <PhotoData />
+      <PhotoFrame url={image.url} />
+      <PhotoData title={image.title} rating={image.rating}/>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const PhotoData = () => {
+const PhotoData = ({title, rating}) => {
   return (
     <div>
       <ul>
-        <li>Title</li>
-        <li>Rating</li>
+        <li>{title}</li>
+        <li>{rating}</li>
       </ul>
     </div>
   );
