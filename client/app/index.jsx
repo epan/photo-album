@@ -2,8 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends React.Component {
+  constructor () {
+    super ();
+    this.state = {
+      example: 'value'
+    };
+  }
+
   render () {
-    return <p> Hello React! </p>;
+    return (
+      <div>
+        <h2>Photo Library App</h2>
+        <h4>Using MySQL, Knex, React</h4>
+        {/*<List />*/}
+        {/*<PhotoViewer />*/}
+      </div>
+    );
   }
 }
 
