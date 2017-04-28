@@ -12,10 +12,13 @@ app.use(bodyParser.json());
 app.use(morgan('tiny'));
 app.use(express.static(__dirname + '/client/public'));
 
-app.listen(PORT, () => { 
-  console.log(`Listening on ${IP}:${PORT}`); 
+app.listen(PORT, () => {
+  console.log(`Listening on ${IP}:${PORT}`);
 });
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'client/index.html'));
-// });
+app.get('/photos', (req, res) => {
+  db('photos').where('id', req.query.id)
+  .then((result) => {
+    res.send(result);
+  });
+});

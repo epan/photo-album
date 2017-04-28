@@ -6,13 +6,13 @@ const db = require('knex')({
     host: '127.0.0.1',
     user: 'root',
     password: '',
-    database: 'catBase'
+    database: 'catbase'
   }
 });
 
 db.schema.dropTableIfExists('photos')
   .then(() => {
-    console.log('table dropped');  
+    console.log('table dropped');
   })
   .then(() => {
     db.schema.createTableIfNotExists('photos', (table) => {
@@ -29,6 +29,5 @@ db.schema.dropTableIfExists('photos')
       });
     });
   });
-  
 
 module.exports = db;

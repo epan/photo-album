@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 import List from './List';
 import PhotoViewer from './PhotoViewer';
@@ -25,6 +26,18 @@ class App extends React.Component {
 
   handleTitleClick (id) {
     console.log('id is:', id);
+    axios.get('/photos', {
+      params: { id: id }
+    })
+    .then(({data}) => {
+      console.log('photo from GET:', data[0]);
+      this.setState({
+        currentImage: data[0]
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
   }
 
   render () {
