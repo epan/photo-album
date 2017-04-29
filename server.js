@@ -17,8 +17,12 @@ app.listen(PORT, () => {
 });
 
 app.get('/photos', (req, res) => {
-  db('photos').where('id', req.query.id)
-  .then((result) => {
-    res.send(result);
+  db.getPhotoById(req.query.id, (err, data) => {
+    console.log('The photo:', data);
+    if (err) {
+      res.status(501).send(err);
+    } else {
+      res.send(data);
+    }
   });
 });

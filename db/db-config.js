@@ -30,4 +30,10 @@ db.schema.dropTableIfExists('photos')
     });
   });
 
-module.exports = db;
+const getPhotoById = (id, cb) => {
+  db('photos').where('id', id)
+    .then((data) => { cb(null, data) })
+    .catch((err) => { cb(err, null) });
+};
+
+module.exports.getPhotoById = getPhotoById;
