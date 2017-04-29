@@ -9,7 +9,7 @@ const seedData = [
     id: 2,
     title: 'Kalev\'s Face',
     url: 'https://media.giphy.com/media/88P7lxjwCEvWo/giphy.gif',
-    rating: 0
+    rating: 4
   },
   {
     id: 3,
